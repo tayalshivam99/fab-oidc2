@@ -17,7 +17,8 @@ ENABLE_ROLE_OIDC_ACCESS = os.getenv('ENABLE_ROLE_OIDC_ACCESS',
                                     default='True')
 ROLES_OIDC_FIELD = os.getenv('ROLES_OIDC_FIELD',
                              default='roles')
-ENABLE_VIEWER_ACCESS = os.getenv('ENABLE_VIEWER_ACCESS',default=False)
+ENABLE_VIEWER_ACCESS = os.getenv('ENABLE_VIEWER_ACCESS',
+                                 default=False)
 
 
 class AuthOIDCView(AuthOIDView):
